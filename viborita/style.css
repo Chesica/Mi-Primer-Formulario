@@ -1,0 +1,36 @@
+.container {
+    width: 500px;
+  }
+  
+  .snake {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(38, 17, 60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s, left 0.3s;
+  }
+  
+  .snake:hover {
+    background-color: darkgreen;
+  }
+  
+  .snake.moving {
+    top: 380px;
+  }
+  
+  .snake.moving.right {
+    left: 380px;
+  }
+  
+  .snake.moving.down {
+    top: 380px;
+    left: 360px;
+  }
+  
+  .snake.moving.left {
+    top: 360px;
+    left: 360px;
+  }
+  
